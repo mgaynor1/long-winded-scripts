@@ -10,6 +10,7 @@ require(spocc) # spocc_1.0.8
 require(ridigbio) # ridigbio_0.3.5
 require(tibble) # tibble_2.1.3
 ```
+## Final columns: 
 
 | Column | Description |
 | ----------- | ----------- |
