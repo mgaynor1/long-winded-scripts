@@ -93,9 +93,16 @@ getbison <- function(spocc_query){
 # spocc_combine
 spocc_combine <- function(synonyms_list, newfilename){
         spocc_query <- occ(query = synonyms_list, 
-                       from = c('gbif', 'bison'), 
+                       from = c('gbif', 'bison', 'idigbio'), 
                        has_coords = FALSE)
         spocc_query_df <- occ2df(spocc_query)
+        spocc_query_df <- spocc_query_df %>%
+                         select(spocc.latitude  = latitude, 
+                                  spocc.longitude = longitude, 
+                                  ID = key,
+                                  spocc.prov = prov,
+                                  spocc.date = date,
+                                  spocc.name = name)
         bison_level <- nlevels(spocc_query$bison)
         if(bison_level == 0){
           # Query parts
@@ -103,8 +110,9 @@ spocc_combine <- function(synonyms_list, newfilename){
           query_gbif <- getgbif(spocc_query)
           # Join 
           query_combinedA <- full_join(query_idigbio, query_gbif)
+          query_combinedB <- left_join(query_combinedA,spocc_query_df, by = "ID" )
           # Write as csv
-          write.csv(query_combinedA, newfilename, row.names = FALSE)
+          write.csv(query_combinedB, newfilename, row.names = FALSE)
       
         } else {
           # Query parts
@@ -115,8 +123,10 @@ spocc_combine <- function(synonyms_list, newfilename){
           query_combinedA <- full_join(query_idigbio, query_gbif)
         	# Join 
         	query_combinedB <- full_join(query_bison, query_combinedA)
+        	query_combinedC <- left_join(query_combinedB, spocc_query_df, by = "ID" )
+        	
         	# Write as csv
-        	write.csv(query_combinedB, newfilename, row.names = FALSE)
+        	write.csv(query_combinedC, newfilename, row.names = FALSE)
 	}
 }
 
