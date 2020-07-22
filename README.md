@@ -1,7 +1,7 @@
 # Long-winded Scripts
 This is a collection of scripts that took me a large amount of time to put together in R and python.   
-      - Occurrence Data (R)
-      - SoilGridDownload (python3)
+      - Occurrence Data (R).  
+      - SoilGridDownload (python3).  
 
 ## Occurrence Data
 I really wanted to download data from 'idigbio', 'gbif', and 'bison' and keep specific columns - therefore I put together these scripts to help me do just that. See the OccurrenceData folder to see more. 
