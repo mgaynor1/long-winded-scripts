@@ -1,5 +1,7 @@
 # Long-winded Scripts
-This is a collection of scripts that took me a large amount of time to put together. 
+This is a collection of scripts that took me a large amount of time to put together in R and python.   
+      - Occurrence Data (R)
+      - SoilGridDownload (python3)
 
 ## Occurrence Data
 I really wanted to download data from 'idigbio', 'gbif', and 'bison' and keep specific columns - therefore I put together these scripts to help me do just that. See the OccurrenceData folder to see more. 
@@ -24,3 +26,5 @@ I really wanted to download data from 'idigbio', 'gbif', and 'bison' and keep sp
 | prov | indicates who provided the data: gbif, bison, or idigbio |
 
 
+## Soil Grid Download
+Downloading Soil Grids v2.0 for North America using python3 (in Juypter Notebook). Lots of help from  Mike Belitz [(Github: Mbelitz)](https://github.com/mbelitz) on this one! 
