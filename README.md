@@ -1,7 +1,8 @@
 # Long-winded Scripts
-This is a collection of scripts that took me a large amount of time to put together in R and python.   
+This is a collection of scripts that took me a large amount of time to put together in R and python. I also am adding scripts to share with others.   
       - Occurrence Data (R).  
-      - SoilGridDownload (python3).  
+      - SoilGridDownload (python3). 
+      - Convex Hulls (R) 
 
 ## Occurrence Data
 I really wanted to download data from 'idigbio', 'gbif', and 'bison' and keep specific columns - therefore I put together these scripts to help me do just that. See the OccurrenceData folder to see more. 
@@ -28,3 +29,6 @@ I really wanted to download data from 'idigbio', 'gbif', and 'bison' and keep sp
 
 ## Soil Grid Download
 Downloading Soil Grids v2.0 for North America using python3 (in Juypter Notebook). Lots of help from  Mike Belitz [(Github: Mbelitz)](https://github.com/mbelitz) on this one! 
+
+## Convex Hulls  
+This script shows how to take occurrence records, create a convex hull, and add two different types of buffers.     
