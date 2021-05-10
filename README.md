@@ -1,8 +1,8 @@
 # Long-winded Scripts
 This is a collection of scripts that took me a large amount of time to put together in R and python. I also am adding scripts to share with others.   
       - Occurrence Data (R).  
-      - SoilGridDownload (python3). 
-      - Convex Hulls (R) 
+      - SoilGridDownload (python3).        
+      - Convex Hulls (R).         
 
 ## Occurrence Data
 I really wanted to download data from 'idigbio', 'gbif', and 'bison' and keep specific columns - therefore I put together these scripts to help me do just that. See the OccurrenceData folder to see more. 
