@@ -12,24 +12,24 @@ require(tibble) # tibble_2.1.3
 ```
 ## Final columns: 
 
-| Column | Description |
-| ----------- | ----------- |
-| name | scientific name, http://rs.tdwg.org/dwc/terms/scientificName |
-| basis | basis of record, http://rs.tdwg.org/dwc/terms/basisOfRecord |
-| date | event data, 	http://rs.tdwg.org/dwc/terms/eventDate |
-| institutionID | institution ID, http://rs.tdwg.org/dwc/terms/institutionID |
-| collectionCode | collection code, http://rs.tdwg.org/dwc/terms/collectionCode |
-| collectionID | collection ID, http://rs.tdwg.org/dwc/terms/collectionID |
-| country | country, 	http://rs.tdwg.org/dwc/terms/country |
-| county | county, http://rs.tdwg.org/dwc/terms/county |
-| state | stateprovince, http://rs.tdwg.org/dwc/terms/stateProvince |
-| locality | http://rs.tdwg.org/dwc/terms/locality or 	http://rs.tdwg.org/dwc/terms/verbatimLocality |
-| Latitude | http://rs.tdwg.org/dwc/terms/decimalLatitude |
-| Longitude | http://rs.tdwg.org/dwc/terms/decimalLongitude |
-| ID | idigbio = uuid, gbif = key, bison = occurrenceID |
-| coordinateUncertaintyInMeters | http://rs.tdwg.org/dwc/terms/coordinateUncertaintyInMeters |
-| habitat | http://rs.tdwg.org/dwc/iri/habitat |
-| prov | indicates who provided the data: gbif, bison, or idigbio |
+| Column | Description | Class |
+| ----------- | ----------- | ----------- |
+| name | scientific name, http://rs.tdwg.org/dwc/terms/scientificName | character |
+| basis | basis of record, http://rs.tdwg.org/dwc/terms/basisOfRecord | character |
+| date | event data, 	http://rs.tdwg.org/dwc/terms/eventDate | character |
+| institutionID | institution ID, http://rs.tdwg.org/dwc/terms/institutionID | character | 
+| collectionCode | collection code, http://rs.tdwg.org/dwc/terms/collectionCode | character |
+| collectionID | collection ID, http://rs.tdwg.org/dwc/terms/collectionID | character |
+| country | country, 	http://rs.tdwg.org/dwc/terms/country | character |
+| county | county, http://rs.tdwg.org/dwc/terms/county | character |
+| state | stateprovince, http://rs.tdwg.org/dwc/terms/stateProvince | character |
+| locality | http://rs.tdwg.org/dwc/terms/locality or 	http://rs.tdwg.org/dwc/terms/verbatimLocality | character |
+| Latitude | http://rs.tdwg.org/dwc/terms/decimalLatitude | numeric |
+| Longitude | http://rs.tdwg.org/dwc/terms/decimalLongitude | numeric |
+| ID | idigbio = uuid, gbif = key, bison = occurrenceID | character |
+| coordinateUncertaintyInMeters | http://rs.tdwg.org/dwc/terms/coordinateUncertaintyInMeters | numeric |
+| habitat | http://rs.tdwg.org/dwc/iri/habitat | character |
+| prov | indicates who provided the data: gbif, bison, or idigbio |character |
 
 ## [DownloadData.R](https://github.com/mgaynor1/long-winded-scripts/blob/master/OccurrenceData/DownloadingData.R)
 The function I made to generate one dataframe with all query ('idigbio', 'gbif', and 'bison') is called *spocc_combine* (this is based on the spocc package). 
