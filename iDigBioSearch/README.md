@@ -1,8 +1,8 @@
 # How to match the iDigBio Search Bar
 
-Using ridigbio, I wanted to match a simple search from the [iDigBio web-portal](https://www.idigbio.org/portal/search).    
+Using ridigbio, I wanted to match a simple search from the [iDigBio web-portal](https://www.idigbio.org/portal/search). This sounds simple, right?  
 
-For a long time, I tried to get this right, but failed! Finally, I found the answer!
+Though this code may not look "long-winded", it took me a long time to find the right fields to search. 
 
 ```
 library(ridigbio)
