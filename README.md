@@ -2,10 +2,11 @@
 This is a collection of scripts that took me a large amount of time to put together in R and python. I also am adding scripts to share with others.   
       - Occurrence Data (R).  
       - SoilGridDownload (python3).        
-      - Convex Hulls (R).         
+      - Convex Hulls (R).     
+      - iDigBio Search Bar (R).
 
 ## Occurrence Data
-I really wanted to download data from 'idigbio', 'gbif', and 'bison' and keep specific columns - therefore I put together these scripts to help me do just that. See the OccurrenceData folder to see more. 
+I really wanted to download data from 'idigbio', 'gbif', and 'bison' and keep specific columns - therefore I put together these scripts to help me do just that. See the OccurrenceData folder to see more.  - NOTE: A talented undergraduate has updated this script and will be publishing a package called **gators: georgraphic and taxonomic occurrence record scrubbing** - stay tune for the citation. If you plan to publish updated code for the same purpose, cite this repository which will be updated with a link to hers when it becomes avaliable.  
 
 | Column | Description |
 | ----------- | ----------- |
